@@ -1,9 +1,9 @@
-// TODO: Make sure to make this class a part of the synthesizer package
-// package <package name>;
+package es.datastructur.synthesizer;
 import java.util.Iterator;
 
-//TODO: Make sure to make this class and all of its methods public
-//TODO: Make sure to make this class extend AbstractBoundedQueue<t>
+//TODO: Make sure to that this class and all of its methods are public
+//TODO: Make sure to add the override tag for all overridden methods
+//TODO: Make sure to make this class implement BoundedQueue<T>
 public class ArrayRingBuffer<T>  {
     /* Index for the next dequeue or peek. */
     private int first;            // index for the next dequeue or peek
@@ -25,20 +25,20 @@ public class ArrayRingBuffer<T>  {
 
     /**
      * Adds x to the end of the ring buffer. If there is no room, then
-     * throw new RuntimeException("Ring buffer overflow"). Exceptions
-     * covered Monday.
+     * throw new RuntimeException("Ring buffer overflow"). 
      */
     public void enqueue(T x) {
         // TODO: Enqueue the item. Don't forget to increase fillCount and update last.
+        return;
     }
 
     /**
      * Dequeue oldest item in the ring buffer. If the buffer is empty, then
-     * throw new RuntimeException("Ring buffer underflow"). Exceptions
-     * covered Monday.
+     * throw new RuntimeException("Ring buffer underflow"). 
      */
     public T dequeue() {
         // TODO: Dequeue the first item. Don't forget to decrease fillCount and update 
+        return null;
     }
 
     /**
@@ -46,7 +46,9 @@ public class ArrayRingBuffer<T>  {
      */
     public T peek() {
         // TODO: Return the first item. None of your instance variables should change.
+        return null;
     }
 
-    // TODO: When you get to part 5, implement the needed code to support iteration.
+    // TODO: When you get to part 4, implement the needed code to support iteration and equals.
 }
+    // TODO: Remove all comments that say TODO when you're done.

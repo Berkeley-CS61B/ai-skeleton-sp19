@@ -1,7 +1,6 @@
-// TODO: Make sure to make this class a part of the synthesizer package
-//package <package name>;
+package es.datastructur.synthesizer;
 
-//Make sure this class is public
+//Note: This file will not compile until you complete task 1 (BoundedQueue).
 public class GuitarString {
     /** Constants. Do not change. In case you're curious, the keyword final means
      * the values cannot be changed at runtime. We'll discuss this and other topics
@@ -45,3 +44,4 @@ public class GuitarString {
         return 0;
     }
 }
+    // TODO: Remove all comments that say TODO when you're done.
