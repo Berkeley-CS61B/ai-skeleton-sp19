@@ -1,5 +1,6 @@
 package bearmaps.proj2ab;
 
+
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Set;
@@ -75,6 +76,11 @@ public class DoubleMapPQ<T> implements ExtrinsicMinPQ<T> {
         double oldP = itemToPriority.get(item);
         Set<T> itemsWithOldPriority = priorityToItem.get(oldP);
         itemsWithOldPriority.remove(item);
+
+        if (itemsWithOldPriority.size() == 0) {
+            priorityToItem.remove(oldP);
+        }
+
         itemToPriority.remove(item);
         add(item, priority);
     }
