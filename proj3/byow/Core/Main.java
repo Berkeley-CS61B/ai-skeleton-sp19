@@ -1,9 +1,7 @@
 package byow.Core;
 
-import byow.TileEngine.TETile;
-
 /** This is the main entry point for the program. This class simply parses
- *  the command line inputs, and lets the byow.Core.Game class take over
+ *  the command line inputs, and lets the byow.Core.Engine class take over
  *  in either keyboard or input string mode.
  */
 public class Main {
@@ -12,12 +10,12 @@ public class Main {
             System.out.println("Can only have one argument - the input string");
             System.exit(0);
         } else if (args.length == 1) {
-            Game game = new Game();
-            TETile[][] worldState = game.playWithInputString(args[0]);
-            System.out.println(TETile.toString(worldState));
+            Engine engine = new Engine();
+            engine.interactWithInputString(args[0]);
+            System.out.println(engine.toString());
         } else {
-            Game game = new Game();
-            game.playWithKeyboard();
+            Engine engine = new Engine();
+            engine.interactWithKeyboard();
         }
     }
 }
